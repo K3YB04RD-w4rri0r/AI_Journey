@@ -41,10 +41,10 @@ _Task: To normalize data, you need the Mean and Standard Deviation of your speci
 
 **Deliverables:**
 
-- [ ] **A temporary iterator/loader** set up to loop through your entire training set in batches (with resizing applied, but no normalization yet).
-- [ ] **An accumulation script** that calculates the running sum of pixels and the running sum of _squared_ pixels for the Red, Green, and Blue channels independently as it loops through the batches.
-- [ ] **A final calculation step** that uses the accumulated sums and the total pixel count to compute the exact `[R, G, B]` Mean and Standard Deviation. Print these 6 floats to the console.
-- [ ] **An updated transform pipeline** that includes a normalization step explicitly utilizing your newly calculated statistics.
+- [x] **A temporary iterator/loader** set up to loop through your entire training set in batches (with resizing applied, but no normalization yet).
+- [x] **An accumulation script** that calculates the running sum of pixels and the running sum of _squared_ pixels for the Red, Green, and Blue channels independently as it loops through the batches.
+- [x] **A final calculation step** that uses the accumulated sums and the total pixel count to compute the exact `[R, G, B]` Mean and Standard Deviation. Print these 6 floats to the console.
+- [x] **An updated transform pipeline** that includes a normalization step explicitly utilizing your newly calculated statistics.
 
 ### 🟩 FRIDAY: Custom Batching (`collate_fn`) & DataLoaders
 
@@ -52,9 +52,9 @@ _Task: Take control of how PyTorch batches individual items together. Write the 
 
 **Deliverables:**
 
-- [ ] **A custom collate function** that accepts a list of tuples (the output of `__getitem__`), separates the images from the labels, and constructs a single batched image tensor and a single batched label tensor.
-- [ ] **A `train_loader` and `val_loader`** instantiated using your custom dataset, your custom collate function, and specific arguments to enable multiprocessing and fast CPU-to-GPU memory transfers.
-- [ ] **A test execution** that successfully draws exactly one batch from the loader and prints the resulting tensor shapes.
+- [x] **A custom collate function** that accepts a list of tuples (the output of `__getitem__`), separates the images from the labels, and constructs a single batched image tensor and a single batched label tensor.
+- [x] **A `train_loader` and `val_loader`** instantiated using your custom dataset, your custom collate function, and specific arguments to enable multiprocessing and fast CPU-to-GPU memory transfers.
+- [x] **A test execution** that successfully draws exactly one batch from the loader and prints the resulting tensor shapes.
 
 ### 🟦 SATURDAY: The Visual Sanity Check
 

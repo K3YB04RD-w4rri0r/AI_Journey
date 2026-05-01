@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Vision/Survival Guide.md",
+                "file": "Computer_Vision/Weekly Breakdown/Week 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Survival Guide"
+              "title": "Week 2"
             }
           }
         ],
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Vision/Survival Guide.md",
+                "file": "Computer_Vision/Weekly Breakdown/Week 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Survival Guide"
+              "title": "Outgoing links from Week 2"
             }
           },
           {
@@ -185,7 +185,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -201,8 +202,10 @@
   },
   "active": "6d9ad6b314e0c20b",
   "lastOpenFiles": [
-    "Computer_Vision/Possible Projects.md",
+    "Computer_Vision/Weekly Breakdown/Week 1.md",
     "Computer_Vision/Computer Vision Roadmap - 1.md",
+    "Computer_Vision/Survival Guide.md",
+    "Computer_Vision/Possible Projects.md",
     "Ressources/Libraries.md",
     "Computer Vision/Weekly Breakdown/Week 2.md",
     "Ressources",
