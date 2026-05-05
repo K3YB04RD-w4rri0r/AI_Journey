@@ -62,9 +62,9 @@ _Task: Normalized tensors look dark and distorted when plotted directly. You mus
 
 **Deliverables:**
 
-- [ ] **A "de-normalization" function** that mathematically reverses the normalization applied on Thursday and bounds the values safely for rendering.
-- [ ] **A batch extraction** that pulls a single batch from your active `train_loader`.
-- [ ] **A single saved image file** (`pipeline_proof.png`) containing a visual grid of the batch. The grid must display properly colored images (not distorted by aspect ratio squishing), and each image must have its corresponding ground truth label written above it as a title.
+- [x] **A "de-normalization" function** that mathematically reverses the normalization applied on Thursday and bounds the values safely for rendering.
+- [x] **A batch extraction** that pulls a single batch from your active `train_loader`.
+- [x] **A single saved image file** (`pipeline_proof.png`) containing a visual grid of the batch. The grid must display properly colored images (not distorted by aspect ratio squishing), and each image must have its corresponding ground truth label written above it as a title.
 
 ### 🟪 SUNDAY: Profiling Bottlenecks & Delivery
 
@@ -72,7 +72,7 @@ _Task: Measure your pipeline's speed to ensure the CPU can load images fast enou
 
 **Deliverables:**
 
-- [ ] **A benchmarking script** that loops through 50 batches of your dataloader without doing any model training, recording the total execution time.
+- [x] **A benchmarking script** that loops through 50 batches of your dataloader without doing any model training, recording the total execution time.
 - [ ] **A documented experiment** inside your script (or in comments) logging the total execution time when your dataloader uses 0 multiprocessing workers versus multiple workers.
 - [ ] **A fully linted codebase** with zero formatting or unused-import warnings (using your linter of choice).
 - [ ] **A Git push** containing your clean `.py` files, your CSV manifests, and your `pipeline_proof.png` (ensuring no raw image data is pushed to the repository).
