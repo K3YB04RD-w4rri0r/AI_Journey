@@ -5,21 +5,21 @@
 *Task: Before using built-in optimizers, you must understand how PyTorch tracks calculus via the computational graph. You will build a synthetic mathematical function and optimize its parameters manually.*
 
 **Deliverables:**
-- [ ] **A script generating a synthetic dataset** of inputs $X$ and targets $Y$ based on a simple linear equation (e.g., $Y = 3X + 2$).
-- [ ] **Weight and Bias tensors** initialized randomly, explicitly configured to track gradients (`requires_grad=True`).
-- [ ] **A manual gradient descent loop** (no `torch.optim`, no `torch.nn`). You must calculate the forward pass, calculate the Mean Squared Error loss, trigger the backward pass, and update the weights manually.
-- [ ] **A context manager implementation** proving you know how to safely update weights without PyTorch adding the update step itself to the computational graph (Hint: investigate `torch.no_grad()`).
-- [ ] **Console output** showing your random weights gradually converging toward the true values (e.g., $W \approx 3$, $b \approx 2$).
+- [x] **A script generating a synthetic dataset** of inputs $X$ and targets $Y$ based on a simple linear equation (e.g., $Y = 3X + 2$).
+- [x] **Weight and Bias tensors** initialized randomly, explicitly configured to track gradients (`requires_grad=True`).
+- [x] **A manual gradient descent loop** (no `torch.optim`, no `torch.nn`). You must calculate the forward pass, calculate the Mean Squared Error loss, trigger the backward pass, and update the weights manually.
+- [x] **A context manager implementation** proving you know how to safely update weights without PyTorch adding the update step itself to the computational graph (Hint: investigate `torch.no_grad()`).
+- [x] **Console output** showing your random weights gradually converging toward the true values (e.g., $W \approx 3$, $b \approx 2$).
 
 ### 🟥 TUESDAY: The Dummy Model & Loss Functions
 *Task: We are not building complex CNNs yet (that is Week 4). Today, you need a structurally correct, bare-minimum PyTorch model to plug your image data into, and an objective function to measure its failure.*
 
 **Deliverables:**
-- [ ] **A custom class** inheriting from `torch.nn.Module`.
-- [ ] **An `__init__` method** defining a flattening layer and a single fully connected layer (`nn.Linear`). The input features must mathematically match the total pixels of a single image from your Week 2 dataloader. The output features must equal your number of classes (2).
-- [ ] **A `forward` method** that defines how data flows through the layers.
-- [ ] **An instantiation** of your model moved to your target hardware device (CUDA/MPS).
-- [ ] **A script execution** that pulls exactly one batch from your Week 2 `train_loader`, passes it through the model, and computes the Cross Entropy Loss. Print the initial scalar loss value to the console.
+- [x] **A custom class** inheriting from `torch.nn.Module`.
+- [x] **An `__init__` method** defining a flattening layer and a single fully connected layer (`nn.Linear`). The input features must mathematically match the total pixels of a single image from your Week 2 dataloader. The output features must equal your number of classes (2).
+- [x] **A `forward` method** that defines how data flows through the layers.
+- [x] **An instantiation** of your model moved to your target hardware device (CUDA/MPS).
+- [x] **A script execution** that pulls exactly one batch from your Week 2 `train_loader`, passes it through the model, and computes the Cross Entropy Loss. Print the initial scalar loss value to the console.
 
 ### 🟧 WEDNESDAY: The Optimizer & Core Loop Mechanics
 *Task: Replace Monday's manual gradient math with PyTorch's native optimization algorithms. Master the 5 strict sequential steps required to train a neural network.*
