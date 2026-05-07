@@ -1,4 +1,5 @@
 # 🗓️ WEEK 3: The Engine – Autograd, Optimizers & The Training Loop
+[[Week 2]]
 **Pace:** 2 Hours / Day | **Goal:** Master computational graphs, build a bare-minimum model, construct a mathematically sound training/validation loop, and prove it works by deliberately overfitting a single batch.
 
 ### ⬛ MONDAY: Autograd & The Computational Graph
@@ -25,23 +26,23 @@
 *Task: Replace Monday's manual gradient math with PyTorch's native optimization algorithms. Master the 5 strict sequential steps required to train a neural network.*
 
 **Deliverables:**
-- [ ] **An optimizer instantiation** (e.g., `torch.optim.Adam` or `SGD`) linked to your dummy model's parameters, with a defined learning rate.
-- [ ] **A single-step training function** that executes the unchangeable 5-step lifecycle:
+- [x] **An optimizer instantiation** (e.g., `torch.optim.Adam` or `SGD`) linked to your dummy model's parameters, with a defined learning rate.
+- [x] **A single-step training function** that executes the unchangeable 5-step lifecycle:
     1. Forward pass.
     2. Loss calculation.
     3. Gradient clearing.
     4. Backpropagation (calculating derivatives).
     5. Optimizer step (updating weights).
-- [ ] **A diagnostic printout** that proves weights are changing. Extract a specific weight value from the model *before* the 5-step process, and print it again *after* the process to visually verify the mathematical update occurred.
+- [x] **A diagnostic printout** that proves weights are changing. Extract a specific weight value from the model *before* the 5-step process, and print it again *after* the process to visually verify the mathematical update occurred.
 
 ### 🟨 THURSDAY: The Ultimate Sanity Check (Overfit a Single Batch)
 *Task: This is the most important debugging technique in Deep Learning. If a model and training loop cannot memorize a single batch of data perfectly, the architecture or pipeline is fundamentally broken. You will force your model to memorize 32 images.*
 
 **Deliverables:**
-- [ ] **A batch isolation script** that extracts exactly one batch of images and labels from your `train_loader` and traps them in memory (do not iterate the loader).
-- [ ] **A micro-training loop** that runs your 5-step optimization process on *this exact same batch* for 100 consecutive iterations.
-- [ ] **Accuracy tracking logic** inside the loop that converts raw model logits into predicted class indices and calculates the percentage of correct predictions.
-- [ ] **A plotted curve** saved as `single_batch_overfit.png` visually proving that within 100 iterations, the Loss converged to ~0.000 and the Accuracy reached exactly 100%.
+- [x] **A batch isolation script** that extracts exactly one batch of images and labels from your `train_loader` and traps them in memory (do not iterate the loader).
+- [x] **A micro-training loop** that runs your 5-step optimization process on *this exact same batch* for 100 consecutive iterations.
+- [x] **Accuracy tracking logic** inside the loop that converts raw model logits into predicted class indices and calculates the percentage of correct predictions.
+- [x] **A plotted curve** saved as `single_batch_overfit.png` visually proving that within 100 iterations, the Loss converged to ~0.000 and the Accuracy reached exactly 100%.
 
 ### 🟩 FRIDAY: Full Epoch Training & Running Metrics
 *Task: Scale the loop to ingest the entire dataset. You must correctly accumulate running metrics. (Warning: A common junior error is calculating running averages incorrectly because the final batch in a dataset is often smaller than the rest).*

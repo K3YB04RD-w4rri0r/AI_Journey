@@ -3,7 +3,7 @@
 _Budget: 10–14 hours per week. If you miss a day, catch up on the weekend. Use the Sunday Discord sync._
 
 ### **Phase 1: PyTorch Fluency (Weeks 1-5)** 
-[[Week 1]], [[Week 2]]
+[[Week 1]]
 
 - **Week 1:** Install Conda, VS Code, PyTorch. Write a script to multiply and reshape tensors (`.view()`, `.squeeze()`).
 - **Week 2:** Build a custom `torch.utils.data.Dataset` using a messy image dataset. Handle resizing and normalization manually.

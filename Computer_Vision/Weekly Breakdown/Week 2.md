@@ -1,5 +1,5 @@
 # 🗓️ WEEK 2: Bulletproof Data Pipelines
-
+[[]]
 **Pace:** 2 Hours / Day | **Goal:** Build a production-grade data pipeline that handles corrupted files, maintains aspect ratios, and feeds the GPU at maximum speed.
 
 ### ⬛ MONDAY: Data Janitor Work & Leakage Prevention

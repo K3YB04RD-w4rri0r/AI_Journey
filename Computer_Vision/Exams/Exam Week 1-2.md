@@ -1,3 +1,4 @@
+[[Week 1]]    [[Week 2]] 
 # 🎓 MIDTERM EXAM: Weeks 1 & 2
 **Total Points:** 100
 **Topics:** PyTorch Mechanics, Memory & Strides, Object-Oriented Datasets, Image Processing, & Performance Profiling.
