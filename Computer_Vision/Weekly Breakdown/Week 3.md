@@ -48,25 +48,25 @@
 *Task: Scale the loop to ingest the entire dataset. You must correctly accumulate running metrics. (Warning: A common junior error is calculating running averages incorrectly because the final batch in a dataset is often smaller than the rest).*
 
 **Deliverables:**
-- [ ] **Nested loops** implemented cleanly: an outer loop for `Epochs` and an inner loop for `Batches` (iterating over the entire `train_loader`).
-- [ ] **Correct running accumulators** that track total cumulative loss and total correct predictions across the epoch.
-- [ ] **Math-safe metric calculations** that divide cumulative metrics by the actual number of *samples* processed, not just the number of batches.
-- [ ] **Console output** for an entire 3-epoch training run, displaying the exact Training Loss and Training Accuracy at the end of each epoch.
+- [x] **Nested loops** implemented cleanly: an outer loop for `Epochs` and an inner loop for `Batches` (iterating over the entire `train_loader`).
+- [x] **Correct running accumulators** that track total cumulative loss and total correct predictions across the epoch.
+- [x] **Math-safe metric calculations** that divide cumulative metrics by the actual number of *samples* processed, not just the number of batches.
+- [x] **Console output** for an entire 3-epoch training run, displaying the exact Training Loss and Training Accuracy at the end of each epoch.
 
 ### 🟦 SATURDAY: State Management & The Validation Phase
 *Task: A model that only trains is useless; it must be evaluated on unseen data. You must carefully manage PyTorch's internal state to ensure you do not accidentally train on the validation set or leak gradients.*
 
 **Deliverables:**
-- [ ] **State toggles** added to your loop. The model must explicitly be set to training mode before the train loop, and evaluation mode before the validation loop.
-- [ ] **A complete validation loop** nested inside the epoch loop (running after the training phase completes).
-- [ ] **Gradient disabling** applied strictly to the validation loop using a context manager, proving you understand how to prevent memory leaks and unnecessary calculus during inference.
-- [ ] **Combined console output** logging Train Loss, Train Acc, Validation Loss, and Validation Acc side-by-side for 5 total epochs.
+- [x] **State toggles** added to your loop. The model must explicitly be set to training mode before the train loop, and evaluation mode before the validation loop.
+- [x] **A complete validation loop** nested inside the epoch loop (running after the training phase completes).
+- [x] **Gradient disabling** applied strictly to the validation loop using a context manager, proving you understand how to prevent memory leaks and unnecessary calculus during inference.
+- [x] **Combined console output** logging Train Loss, Train Acc, Validation Loss, and Validation Acc side-by-side for 5 total epochs.
 
 ### 🟪 SUNDAY: Checkpointing & Artifact Delivery
 *Task: Training a model costs compute and time. If the script ends, the weights vanish from RAM. You must serialize the mathematical state to your hard drive and clean up the repository.*
 
 **Deliverables:**
-- [ ] **A checkpointing mechanism** that saves the model's `state_dict` to disk as a `.pth` or `.pt` file at the very end of training.
-- [ ] **A "load and verify" script** completely separate from your training script. It must initialize a fresh, untrained model, load the `.pth` weights into it from the hard drive, and run a single validation batch to prove the loaded weights produce the exact same predictions as the end of your training run.
-- [ ] **A fully linted codebase** with zero formatting or unused-import warnings.
-- [ ] **A Git push** containing your training scripts, your model definition, and your `single_batch_overfit.png`. *(Do NOT commit the `.pth` file to version control. Add `*.pth` to your `.gitignore`)*.
+- [x] **A checkpointing mechanism** that saves the model's `state_dict` to disk as a `.pth` or `.pt` file at the very end of training.
+- [x] **A "load and verify" script** completely separate from your training script. It must initialize a fresh, untrained model, load the `.pth` weights into it from the hard drive, and run a single validation batch to prove the loaded weights produce the exact same predictions as the end of your training run.
+- [x] **A fully linted codebase** with zero formatting or unused-import warnings.
+- [x] **A Git push** containing your training scripts, your model definition, and your `single_batch_overfit.png`. *(Do NOT commit the `.pth` file to version control. Add `*.pth` to your `.gitignore`)*.
