@@ -1,4 +1,5 @@
 # 🗓️ WEEK 5: Consolidation, MLOps & Reproducibility
+[[Week 4]]
 **Pace:** 2 Hours / Day | **Goal:** Transform your messy scripts into a professional, heavily optimized training framework featuring YAML configurations, Mixed Precision training, early stopping, and hyperparameter sweeps.
 
 ### ⬛ MONDAY: Absolute Reproducibility (The Seed)

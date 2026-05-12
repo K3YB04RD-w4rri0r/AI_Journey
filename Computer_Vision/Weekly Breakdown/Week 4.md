@@ -1,4 +1,5 @@
 # 🗓️ WEEK 4: Convolutions, Cloud Tracking & Rigorous Evaluation
+[[Week 3]]
 **Pace:** 2 Hours / Day | **Goal:** Master the spatial mathematics of CNNs, build a modular architecture, track system state in Weights & Biases (WandB), and evaluate performance using multi-dimensional metrics.
 
 ### ⬛ MONDAY: Convolution Mechanics & Reusable Blocks
