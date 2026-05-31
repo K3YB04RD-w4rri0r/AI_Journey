@@ -1,4 +1,3 @@
-# 🗓️ WEEK 1: PyTorch Fluency & Memory Mechanics
 
 **Pace:** 2 Hours / Day | **Goal:** Build the environment, master tensor shape manipulations, understand how PyTorch allocates memory, and write hardware-agnostic code.
 
